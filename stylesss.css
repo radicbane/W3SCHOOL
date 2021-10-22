@@ -75,9 +75,13 @@ a {
 }
 
 /* NAV2 */
-.nav2 {
+/*.nav2 {
   position: absolute;
   left: 63%;
+} */
+
+.nav2{
+  margin-left: auto;
 }
 
 .nav2 ul {
@@ -529,5 +533,81 @@ text-align: center;
     .middle3 .grid{
       grid-template-columns: 100%;
     }
+}
+
+@media screen and (min-width: 602px) and (max-width: 994px){
+
+.section1 .grid{
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.section2 .grid{
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.card {
+  margin: 0px;
+  padding: 23px;
+}
+
+.navbar{
+  padding: 0px 16px 0px 12px;
+  position: relative;
+  z-index: 4;
+  font-size: 18px;
+  background-color: white;
+  color: #282A35;
+  width: 100%;
+  overflow: hidden;
+}
+
+.navbar img{
+  width: 77px;
+margin: 0px;
+padding: 8px 16px;
+float: left;
+border: none;
+display: block;
+outline: 0;
+}
+
+.nav1 ul{
+  display: none;
+}
+.nav1-menu {
+padding: 24px 16px;
+  float: left;
+  border: none;
+  display: block;
+  outline: 0;
+  width: 93px;
+  white-space: normal;
+  margin-right: auto;
+}
+
+.nav1-menu li{
+list-style-type: none;
+}
+.btn1,.btn2{
+  display: none;
+}
+
+.middle .grid {
+  grid-template-columns: 1fr;
+  padding: 64px 0px;
+}
+
+.section1-middle,.section2-middle,.section3-middle,.section4-middle{
+  width: 100%;
+  padding: 15px 23px;
+}
+
+.middle2 .grid {
+  grid-template-columns: 1fr 1fr;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 }
